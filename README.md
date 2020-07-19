@@ -1,6 +1,6 @@
 # SFSymbol
 [![Build Status](https://travis-ci.org/Nirma/SFSymbol.svg?branch=master)](https://travis-ci.org/Nirma/SFSymbol)
-![Swift 5.0](https://img.shields.io/badge/Swift-5.1-orange.svg)
+![Swift 5.3](https://img.shields.io/badge/Swift-5.3-orange.svg)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-purple.svg)](https://github.com/apple/swift-package-manager)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/SFSymbol.svg)](#cocoapods)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -15,7 +15,7 @@ For example `SFSymbol.playCircle` produces the `String` `"play.circle"` that can
 #### UIKit
 
 ```swift
-    UIImage(systemName: SFSymbol.playCircle)
+    UIImage(symbol: .playCircle)
 ```
 
 *or*
@@ -23,7 +23,7 @@ For example `SFSymbol.playCircle` produces the `String` `"play.circle"` that can
 #### SwiftUI
 
 ```swift
-    Image(systemName: SFSymbol.playCircle)
+    Image(symbol: .playCircle)
 ```
 
 
@@ -36,7 +36,7 @@ There is one downfall however, it is a pain in the neck to look up exact symbol 
 
 That is a long string to remember and digging through the catalog of SF Symbols to find in would be quite a waste of time.
 
-Wouldn't it be easier if you could just use code complete?
+Wouldn't it be easier if you could just use code completion?
 
 ![](https://media.giphy.com/media/jQ7lTLsv2poo2qLkUA/giphy.gif)
 
@@ -45,7 +45,7 @@ Thats what this super micro library aims to do.
 ## Installation 
 
 ### Swift Package Manager (Preferred)
-Since Xcode 11 integrated swift package manager natively into the IDE you can add SFSymbol simply by:
+Since Xcode integrated swift package manager natively into the IDE you can add SFSymbol simply by:
 
 **`File`-> `Swift Packages` -> `Add Package Dependency...`**
 
